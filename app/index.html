@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2C9TTLMY2W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2C9TTLMY2W');
+    </script>
+    <!-- Google Ads -->
+    <script data-ad-client="ca-pub-5340935316566933" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <title id="titulo">Saúde</title>
+  </head>
+  <body>
+    <div id="fundoPreto"></div>
+    <div class="container-fluid text-white">
+      <div class="d-flex flex-row principal align-items-center">
+        <div id="cronometro" class="col-sm mt-1">
+          <p>00:00:00</p>
+          <div class="d-flex justify-content-start">
+            <p class="mr-1">Próximo drink:</p>
+            <p>??:??:??</p>
+          </div>
+        </div>
+
+        <div id="hora" class="col-sm mt-1">
+          <div class="d-flex justify-content-around">
+            <div class="d-flex align-items-center">
+              <button
+                id="configurar"
+                class="btn-primary p-2 b2"
+                data-toggle="modal"
+                data-target="#preparativos"
+              >
+                Configurar
+              </button>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <div class="text-center">
+                <p>Hora Atual</p>
+                <p>??:??:??</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <button id="parar" class="btn-primary p-2 b2">Parar</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="total" class="col-sm mt-1">
+          <p>Total ingerido hoje(mínimo): ??:??:??</p>
+        </div>
+      </div>
+
+      <!-- Menu -->
+      <nav class="nav nav-fill menu">
+        <a id="menuImportancia" class="nav-item nav-link menu-link" href="#" data-toggle="collapse" data-target="#boasVindas">Importância da água</a>
+        <a id="menuCalcular" class="nav-item nav-link menu-link" href="#" data-toggle="collapse" data-target="#calcularIngestao" unico="true">Calcular quanto devo consumir</a>
+        <a id="menuLinks" class="nav-item nav-link menu-link" href="#" data-toggle="collapse" data-target="#linksUteis" aria-expanded="false" aria-controls="collapseExample">Links úteis (Mais informações)</a>
+      </nav>
+      <!-- Importância da águas -->
+      <div class="collapse" id="boasVindas"></div>
+      <!-- Links úteis -->
+      <div class="collapse" id="linksUteis"></div>
+      <!-- Calculadora -->
+      <div class="card text-dark container-fluid text-center calcular collapse" data-filho="sugestoesConsumo" id="calcularIngestao"></div>
+      <!-- Sugestões de consumo -->
+      <div class="card mt-2 bg-light border-light text-dark container-fluid text-center calcular collapse" id="sugestoesConsumo"></div>
+      <!-- Modal temporizador -->
+      <div class="modal fade" id="preparativos" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true"></div>
+    </div>
+  </body>
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/dba26f94ea.js" crossorigin="anonymous"></script>
+
+  <script src="lib/system.js"></script>
+    <script>
+        System.defaultJSExtensions = true;
+        System.import('js/app.js').catch(err => console.error(err));
+    </script>
+  
+</html>
