@@ -71,7 +71,8 @@ export class TemporizadorController {
             title: 'Pare tudo e beba água!',
             opcoes: {
                 body: `Vamos lá, é rápido... Está na hora de beber água! ${volume} ml!!`,
-                icon: '../images/icon.png'
+                icon: '../images/icon.png',
+                renotify: true
             }
         });
     }

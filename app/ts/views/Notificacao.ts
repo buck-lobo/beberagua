@@ -3,5 +3,6 @@ export interface Notificacao {
     opcoes: {
                body: string;
                icon: string;
+               renotify: boolean;
             };		
 }
