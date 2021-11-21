@@ -72,6 +72,7 @@ export class TemporizadorController {
             opcoes: {
                 body: `Vamos lá, é rápido... Está na hora de beber água! ${volume} ml!!`,
                 icon: '../images/icon.png',
+                tag: 'renotify',
                 renotify: true
             }
         });
