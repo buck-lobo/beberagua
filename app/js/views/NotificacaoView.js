@@ -8,6 +8,7 @@ System.register([], function (exports_1, context_1) {
             NotificacaoView = class NotificacaoView {
                 constructor(notificacao) {
                     this.notificacao = notificacao;
+                    this.notificar = this.notificar.bind(this);
                 }
                 notificar() {
                     let n = new Notification(this.notificacao.title, this.notificacao.opcoes);
